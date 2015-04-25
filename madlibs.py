@@ -39,7 +39,7 @@ def greet_person():
 
 @app.route('/madlib')
 def show_madlib():
-    animals = request.args.get("animal")
+    animals = request.args.getlist("animal")
     person = request.args.get("person")
     color = request.args.get("color")
     noun = request.args.get("noun")
